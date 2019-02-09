@@ -17,7 +17,7 @@ class MemoryCard extends Component {
       memoryCardInnerClass = memoryCardInnerClass + " flipped"
     }
     return (
-      <div className="MemoryCard" onClick={this.clickHandler.bind(this)}>
+      <div className="MemoryCard" onClick={this.props.pickCard}>
         <div className={memoryCardInnerClass}>
           <div className="MemoryCardBack">
             <img src="https://www.digitalcrafts.com/img/DigitalCrafts-Logo-Wrench.png"></img>
